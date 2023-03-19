@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
 *main-Entry point
 *
@@ -7,14 +8,17 @@
 
 int main(void)
 {
-char lower_case;
-char upper_case;
+char alphabet;
 
-for (upper_case = 'A'; upper_case <= 'Z'; upper_case++)
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
-putchar(upper_case);
+putchar(alphabet);
+}
+
+for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
+{
+putchar(alphabet);
 }
 putchar('\n');
 return (0);
 }
-

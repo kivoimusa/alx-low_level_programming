@@ -1,16 +1,23 @@
 #include <stdio.h>
+
 /**
 *main-Entry point
 *
-*Return:Always 0 (success)
+*Return:Always 0 (Success/correct)
 */
+
 int main(void)
 {
-int i;
+char x;
+char i;
 
-for (i = 0; i < 10; i++)
+for (i = 0; i <= 9; i++)
 {
-printf("%i, i);
+putchar(i + '0');
+}
+for (x = 'a'; x < 'g'; x++)
+{
+putchar(x);
 }
 putchar('\n');
 return (0);
