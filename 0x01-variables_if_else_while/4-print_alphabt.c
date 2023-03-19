@@ -1,18 +1,24 @@
 #include <stdio.h>
+
 /**
 *main-Entry point
 *
 *Return:Always 0 (success)
 */
+
 int main(void)
 {
 char alphabet;
+alphabet = 'a';
 
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+while (alphabet <= 'z')
 {
-if (alphabet == 'q')
-continue;
+
+if (alphabet != 'e' && alphabet != 'q')
+{
 putchar(alphabet);
+}
+alphabet++;
 }
 putchar('\n');
 return (0);
