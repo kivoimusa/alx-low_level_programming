@@ -1,35 +1,41 @@
 #include <stdio.h>
-
 /**
 *main-Entry point
 *
-*Return:Always 0 (success)
+*Return: Always 0 (Success/correct)
 */
 
 int main(void)
 {
-int i, j, k;
-i = 0;
+int i, j;
+int a, b, c, d;
 
-while (i < 100)
+for (i = 0; i < 100; i++)
 {
-j = i % 10;
-k = i / 10;
+a = i / 10;
+b = i % 10;
 
-if (k < j)
+for (j = 0; j < 100; j++)
 {
-putchar(k + '0');
-putchar(j + '0');
+c = j / 10;
+d = j % 10;
 
-if (i < 89)
+if (a < c || (a == c && b < d))
+{
+putchar(a + '0');
+putchar(b + '0');
+putchar(c + '0');
+putchar(d + '0');
+
+if (!(a == 9 && b == 8))
 {
 putchar(44);
 putchar(32);
 }
 }
-i++;
 }
-putchar('\n');
+}
+putchar(' ');
+putchar(10);
 return (0);
 }
-
