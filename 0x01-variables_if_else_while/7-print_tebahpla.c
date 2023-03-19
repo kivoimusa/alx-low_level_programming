@@ -1,16 +1,19 @@
 #include <stdio.h>
+
 /**
 *main-Entry point
-*
+*Description-Prints the letters z to a followed by a new line
 *Return:Always 0 (success)
 */
 
 int main(void)
 {
-char c;
+char x;
 
-for (c = 'z'; c >= 'a'; c--)
+for (x = 'z'; x >= 'a'; x--)
 {
-putchar(c);
+putchar(x);
+}
+putchar('\n');
 return (0);
 }
