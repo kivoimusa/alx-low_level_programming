@@ -10,7 +10,7 @@ int main(void)
 int i, j;
 int a, b, c, d;
 
-for (i = 0 i < 100; i++)
+for (i = 0; i < 100; i++)
 {
 a = i / 10;
 b = i % 10;
@@ -30,7 +30,7 @@ putchar(d + '0');
 if (!(a == 9 && b == 8))
 {
 putchar(44);
-putchar(320;
+putchar(32);
 }
 }
 }
