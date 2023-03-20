@@ -17,7 +17,7 @@ for (y = x + 1; y <= 57; y++)
 putchar(x);
 putchar(y);
 
-if (x == 46 && y == 57)
+if (x  != 46 && y != 57)
 {
 putchar('\n');
 break;

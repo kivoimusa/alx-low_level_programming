@@ -2,23 +2,18 @@
 
 /**
 *main-Entry point
-*
-*Return:Always 0 (Success/correct)
+*Description:Prints numbers 0 to 9 followed by a new line
+*Return:Always 0 (success)
 */
 
 int main(void)
 {
-char x;
-char i;
-
-for (i = 0; i <= 9; i++)
+int x = 0;
+while (x < 10)
 {
-putchar(i + '0');
+printf("%d, x);
+x++;
 }
-
-
-
-
 putchar('\n');
 return (0);
 }
